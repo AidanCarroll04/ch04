@@ -33,7 +33,7 @@ server.get(
 
 server.get("/components/weather", function (req: Request, res: Response): void {
 	const filePath = path.join(process.cwd(), "public", "weather.html");
-	res.setHeader("content-Type", "test/html");
+	res.setHeader("Content-Type", "test/html");
 	res.sendFile(filePath);
 });
 
